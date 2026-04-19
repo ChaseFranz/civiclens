@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:webapi.legistar.com)",
+      "WebFetch(domain:legistar2.granicus.com)",
+      "WebFetch(domain:docs.aws.amazon.com)",
+      "Bash(npm run build)",
+      "Bash(npm run watch)",
+      "Bash(npm test)",
+      "Bash(npm install*)",
+      "Bash(npx cdk synth*)",
+      "Bash(npx cdk diff*)",
+      "Bash(npx cdk deploy*)",
+      "Bash(npx cdk bootstrap*)",
+      "Bash(aws *)",
+      "Bash(git status)",
+      "Bash(git diff*)",
+      "Bash(git log*)",
+      "Bash(git add*)",
+      "Bash(git commit*)"
+    ]
+  }
+}

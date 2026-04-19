@@ -1,0 +1,9 @@
+dist/
+node_modules
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out
+
+# Claude Code local settings (personal permissions, not shared)
+.claude/settings.local.json
