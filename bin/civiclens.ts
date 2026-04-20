@@ -3,6 +3,7 @@ import * as cdk from 'aws-cdk-lib/core';
 import { CivicLensStack } from '../lib/stacks/civiclens-stack';
 import { FoundationStack } from '../lib/stacks/foundation-stack';
 import { GithubOidcStack } from '../lib/stacks/github-oidc-stack';
+import { StorageStack } from '../lib/stacks/storage-stack';
 import { stages } from '../lib/config';
 
 const app = new cdk.App();
@@ -23,6 +24,8 @@ for (const stage of stages) {
   const foundation = foundationByAccount.get(stage.account)!;
 
   new CivicLensStack(app, `CivicLens-${stage.name}`, { env });
+
+  new StorageStack(app, `CivicLens-${stage.name}-Storage`, { stage, env });
 
   new GithubOidcStack(app, `GithubOidc-${stage.name}`, {
     stage,
