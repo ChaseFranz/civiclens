@@ -41,4 +41,7 @@ To add a new environment, add an entry to `lib/config.ts` and create a matching 
 
 ## Docs
 
-See `SPEC.md` for the full product specification.
+- [SPEC.md](SPEC.md) — product spec, personas, user stories
+- [DESIGN.md](DESIGN.md) — technical design for v1
+- [PLAN.md](PLAN.md) — phased implementation plan
+- [TASKS.md](TASKS.md) — discrete task breakdown
